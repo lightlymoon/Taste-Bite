@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>Taste Bite Menu</title>
+  <link rel="stylesheet" href="./css/Menu.css" />
+  <script type="text/javascript" src="./js/Menu.js"></script>
+
+
+</head>
+<body background="./assets/test2.png">
+    
+  <div class="menu-section">
+    <a href="./TasteBiteMain.html" class="back-btn">Back</a>
+    
+    <br>
+    <h1>🍕 Italian Pizzas</h1>
+    <table>
+      <tr><th>Pizza</th></tr>
+      <tr><td onmouseover="delayedShow(this)" onmouseout="clearTimer(this)" onclick="addToCart('Margherita Pizza')">
+        Margherita
+        <div class="ingredients">Tomato sauce, mozzarella, fresh basil</div>
+      </td></tr>
+      <tr><td onmouseover="delayedShow(this)" onmouseout="clearTimer(this)" onclick="addToCart('Pepperoni Pizza')">
+        Pepperoni
+        <div class="ingredients">Tomato sauce, mozzarella, spicy pepperoni</div>
+      </td></tr>
+      <tr><td onmouseover="delayedShow(this)" onmouseout="clearTimer(this)" onclick="addToCart('Quattro Formaggi Pizza')">
+        Quattro Formaggi
+        <div class="ingredients">Mozzarella, gorgonzola, parmesan, provolone</div>
+      </td></tr>
+      <tr><td onmouseover="delayedShow(this)" onmouseout="clearTimer(this)" onclick="addToCart('Capricciosa Pizza')">
+        Capricciosa
+        <div class="ingredients">Tomato, mozzarella, ham, mushrooms, olives, artichokes</div>
+      </td></tr>
+      <tr><td onmouseover="delayedShow(this)" onmouseout="clearTimer(this)" onclick="addToCart('Diavola Pizza')">
+        Diavola
+        <div class="ingredients">Tomato, mozzarella, spicy salami, chili flakes</div>
+      </td></tr>
+      <tr><td onmouseover="delayedShow(this)" onmouseout="clearTimer(this)" onclick="addToCart('Vegetariana Pizza')">
+        Vegetariana
+        <div class="ingredients">Tomato, mozzarella, grilled vegetables</div>
+      </td></tr>
+    </table>
+  </div>
+
+  <div class="menu-section">
+    <h1>🍝 Italian Pastas</h1>
+    <table>
+      <tr><th>Pasta</th></tr>
+      <tr><td onmouseover="delayedShow(this)" onmouseout="clearTimer(this)" onclick="addToCart('Spaghetti Carbonara')">
+        Spaghetti Carbonara
+        <div class="ingredients">Egg yolks, pecorino, pancetta, black pepper</div>
+      </td></tr>
+      <tr><td onmouseover="delayedShow(this)" onmouseout="clearTimer(this)" onclick="addToCart('Lasagna')">
+        Lasagna
+        <div class="ingredients">Layered pasta, ragu, béchamel, parmesan</div>
+      </td></tr>
+      <tr><td onmouseover="delayedShow(this)" onmouseout="clearTimer(this)" onclick="addToCart('Penne Arrabbiata')">
+        Penne Arrabbiata
+        <div class="ingredients">Tomato, garlic, chili peppers, olive oil</div>
+      </td></tr>
+      <tr><td onmouseover="delayedShow(this)" onmouseout="clearTimer(this)" onclick="addToCart('Tagliatelle al Tartufo')">
+        Tagliatelle al Tartufo
+        <div class="ingredients">Tagliatelle pasta, truffle cream, parmesan</div>
+      </td></tr>
+      <tr><td onmouseover="delayedShow(this)" onmouseout="clearTimer(this)" onclick="addToCart('Ravioli Ricotta e Spinaci')">
+        Ravioli Ricotta e Spinaci
+        <div class="ingredients">Ravioli stuffed with ricotta cheese and spinach</div>
+      </td></tr>
+    </table>
+  </div>
+
+  <div id="cart">
+    <h2>🛒 Your Cart</h2>
+    <ul id="cart-list"></ul>
+    <div id="cart-total">Total Items: 0</div>
+  </div>
+
+  <footer>
+    <p>☎️ 111-1111-111 | info@tastebite.com</p>
+    <p>&copy; 2025 Taste Bite. All rights reserved.</p>
+  </footer>
+</body>
+</html>

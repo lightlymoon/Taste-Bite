@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Reserve a Table | Taste Bite</title>
+  <link rel="stylesheet" href="./css/Reservation.css" />
+  
+</head>
+<body>
+  <div class="reservation-container">
+    <a href="./TasteBiteMain.html" class="back-btn">Back</a>
+    <br>
+    <h1>Reserve a Table</h1>
+    <form class="reservation-form" action="#" method="post">
+      <label for="name">Full Name</label>
+      <input type="text" id="name" name="name" placeholder="Your Name" required />
+
+      <label for="phone">Phone Number</label>
+      <input type="tel" id="phone" name="phone" placeholder="e.g. 555-123-4567" required />
+
+      <label for="guests">Number of Guests</label>
+      <select id="guests" name="guests" required>
+        <option value="" disabled selected>Select</option>
+        <option value="1">1 person</option>
+        <option value="2">2 people</option>
+        <option value="3">3 people</option>
+        <option value="4">4 people</option>
+        <option value="5">5+ people</option>
+      </select>
+
+      <label for="date">Reservation Date</label>
+      <input type="date" id="date" name="date" required />
+
+      <label for="time">Reservation Time</label>
+      <input type="time" id="time" name="time" required />
+
+      <button type="submit">Book Now</button>
+    </form>
+  </div>
+  
+
+  <footer>
+    <p>☎️ 111-1111-111 | info@tastebite.com</p>
+    <p>&copy; 2025 Taste Bite. All rights reserved.</p>
+  </footer>
+</body>
+</html>
