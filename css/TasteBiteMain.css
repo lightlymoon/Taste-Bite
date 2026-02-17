@@ -1,226 +1,236 @@
 * {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-    
-  }
-  
-  
-  body {
-    font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
-    line-height: 1.6;
-    background-color: #ded7c8;
-    color: #000000;
-    
-  }
-  header {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    padding: 10px 40px;
-    background-color: #b54242;
-    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
-    font-family: Arial, sans-serif;
-    position: sticky;
-    top: 0;
-    z-index: 10;
-  }
-  
-  .logo img {
-    height: 35px;
-    width: auto;
-  }
-  
-  nav a {
-    margin: 0 15px;
-    text-decoration: none;
-    color: #000000;
-    font-size: 16px;
-    transition: all 0.3s ease;
-  }
-  
-  nav a:hover {
-    color: orange;
-    font-weight: bold;
-    transform: scale(1.05);
-  }
-  
-  .reservation-btn {
-    background-color: rgb(222, 129, 104);
-    color: white;
-    padding: 8px 18px;
-    border-radius: 6px;
-    text-decoration: none;
-    font-weight: bold;
-    transition: background-color 0.3s ease;
-  }
-  
-  .reservation-btn:hover {
-    background-color: orangered;
-    cursor: pointer;
-  }
-  
-  .Main {
-    color: #a968ac; 
-    text-align: left;
-    font-size: 2rem;
-    padding: 40px 20px;
-    max-width: 900px;
-    margin: 40px auto 20px;
-    display: flex;
-    align-items: center;
-    gap: 40px;
-    flex-wrap: wrap;
-  }
-  
-  .Main-text {
-    
-    text-align: left;
-  }
-  
-  .Main-text h1 {
-    font-size: 3rem;
-    margin-bottom: 10px;
-    color: #e44922;
-  }
-  
-  .Main-text h1 span {
-    font-weight: bold;
-    color: orangered;
-  }
-  
-  .secondtext {
-    color: #333;
-    margin-bottom: 10px;
-    font-size: 1.2rem;
-  }
-  
-  .buttons {
-    margin-top: 20px;
-  }
-  
-  
-  .menu,
-  .reserve-table {
-    background-color: rgb(222, 129, 104);
-    border: none;
-    color: white;
-    padding: 12px 25px;
-    border-radius: 6px;
-    cursor: pointer;
-    font-size: 1rem;
-    font-weight: bold;
-    text-decoration: none;
-    display: inline-block;
-    transition: background-color 0.3s ease;
-    margin-right: 15px;
-  }
-  
-  .menu:hover,
-  .reserve-table:hover {
-    background-color: orangered;
-  }
-  
-  .main-image {
-    display: flex;
-    height: 450px;
-    width: 450px;
-    position: absolute;
-    top: 100px;
-    left: 600px;
-  }
-  
-  .main-image img {
-    max-width: 100%;
-    border-radius: 15px;
-    box-shadow: 0 10px 20px rgba(0,0,0,0.2);
-    transition: transform 0.3s ease;
-  }
-  
-  .main-image img:hover {
-    transform: scale(1.05);
-  }
-  
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
 
-  footer {
-    background-color: #8b0000;
-    color: white;
+body {
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  line-height: 1.6;
+  background-color: #ded7c8;
+  color: #000000;
+}
+
+
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px 80px;
+  background-color: #b54242;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+  position: sticky;
+  top: 0;
+  z-index: 10;
+}
+
+.logo img {
+  height: 40px;
+}
+
+nav a {
+  margin: 0 20px;
+  text-decoration: none;
+  color: #000000;
+  font-size: 16px;
+  transition: all 0.3s ease;
+}
+
+nav a:hover {
+  color: orange;
+  font-weight: bold;
+  transform: scale(1.05);
+}
+
+.reservation-btn {
+  background-color: rgb(222, 129, 104);
+  color: white;
+  padding: 10px 22px;
+  border-radius: 6px;
+  text-decoration: none;
+  font-weight: bold;
+  transition: all 0.3s ease;
+}
+
+.reservation-btn:hover {
+  background-color: orangered;
+  transform: translateY(-3px);
+}
+
+
+.Main {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 100px 20px;
+  max-width: 1200px;
+  margin: auto;
+  gap: 50px;
+  flex-wrap: wrap;
+}
+
+.Main-text {
+  flex: 1;
+}
+
+.Main-text h1 {
+  font-size: 3rem;
+  margin-bottom: 20px;
+  color: #e44922;
+}
+
+.Main-text h1 span {
+  color: orangered;
+}
+
+.secondtext {
+  color: #333;
+  margin-bottom: 10px;
+  font-size: 1.2rem;
+}
+
+.buttons {
+  margin-top: 30px;
+}
+
+.menu,
+.reserve-table {
+  background-color: rgb(222, 129, 104);
+  border: none;
+  color: white;
+  padding: 12px 25px;
+  border-radius: 6px;
+  cursor: pointer;
+  font-size: 1rem;
+  font-weight: bold;
+  text-decoration: none;
+  display: inline-block;
+  transition: all 0.3s ease;
+  margin-right: 15px;
+}
+
+.menu:hover,
+.reserve-table:hover {
+  background-color: orangered;
+  transform: translateY(-3px);
+}
+
+.main-image {
+  flex: 1;
+  display: flex;
+  justify-content: center;
+}
+
+.main-image img {
+  width: 100%;
+  max-width: 450px;
+  border-radius: 15px;
+  box-shadow: 0 10px 20px rgba(0,0,0,0.2);
+  transition: transform 0.3s ease;
+}
+
+.main-image img:hover {
+  transform: scale(1.05);
+}
+
+
+.about-section {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 100px 20px;
+  max-width: 1200px;
+  margin: auto;
+  gap: 60px;
+  flex-wrap: wrap;
+}
+
+.spagetti-image {
+  flex: 1;
+  display: flex;
+  justify-content: center;
+}
+
+.spagetti-image img {
+  width: 100%;
+  max-width: 450px;
+  border-radius: 15px;
+  box-shadow: 0 10px 20px rgba(0,0,0,0.2);
+  transition: transform 0.3s ease;
+}
+
+.spagetti-image img:hover {
+  transform: scale(1.05);
+}
+
+.about-text {
+  flex: 1;
+  max-width: 600px;
+  font-size: 1.1rem;
+  line-height: 1.8;
+}
+
+.about-text h1 {
+  font-size: 2.5rem;
+  color: #c1440e;
+  margin-bottom: 25px;
+}
+
+.about-text h4 {
+  margin-bottom: 15px;
+}
+
+.about-text h3 {
+  margin-top: 30px;
+}
+
+.about-text a {
+  text-decoration: none;
+  color: #b54242;
+  font-weight: bold;
+  transition: color 0.3s ease;
+}
+
+.about-text a:hover {
+  color: orangered;
+}
+
+
+.full-image {
+  width: 100%;
+  display: block;
+  margin-top: 50px;
+}
+
+
+footer {
+  background-color: #8b0000;
+  color: white;
+  text-align: center;
+  padding: 30px;
+  margin-top: 60px;
+}
+
+
+@media (max-width: 768px) {
+
+  header {
+    padding: 15px 20px;
+    flex-direction: column;
+    gap: 15px;
+  }
+
+  .Main {
+    flex-direction: column;
     text-align: center;
-    padding: 20px;
-    margin-top: 40px;
   }
-  
-    .Main {
-      flex-direction: column;
-      font-size: 1.5rem;
-      text-align: center;
-    }
-  
-    .Main-text, .main-image {
-      flex: none;
-      width: 100%;
-    }
-    .about-section {
-        padding: 10px 10px;
-        display: flex;
-        align-items: center;
-        flex-wrap: wrap;
-        justify-content: center;
-      }
-      
-      .about-text {
-        max-width: 700px;
-        color: #333;
-        font-size: 1.1rem;
-        font-weight: 400;
-        line-height: 1.7;
-        text-align: initial;
-        
-      }
-      
-      .about-text h1 {
-        position: relative;
-        font-size: 2.5rem;
-        color: #c1440e;
-        margin-bottom: 80px;
-        top: 200px;
-        left:400px;
-      }
-      
-      .about-text h4 {
-        position: relative;
-        font-weight: 500;
-        margin: 110px 0;
-        top: 150px;
-        left: 210px;
-      }
-      .about-text h3 {
-        position: relative;
-        font-weight: 500;
-        margin: 110px 0;
-        top: 100px;
-        left: 300px;
-      }
-     
-  .spagetti-image{
-    height: 450px;
-    width: 450px;
-    position: absolute;
-    top: 800px;
-    left: 80px;
+
+  .about-section {
+    flex-direction: column;
+    text-align: center;
   }
-  
-  .spagetti-image img {
-    max-width: 100%;
-    border-radius: 15px;
-    box-shadow: 0 10px 20px rgba(0,0,0,0.2);
-    transition: transform 0.3s ease;
+
+  nav a {
+    margin: 0 10px;
   }
-  
-  .spagetti-image img:hover {
-    transform: scale(1.05);
-  }
-  .full-image{
-    width: 1300px;
-  }
-    
+}
