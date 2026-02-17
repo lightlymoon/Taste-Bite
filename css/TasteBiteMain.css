@@ -8,9 +8,10 @@ body {
   font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
   line-height: 1.6;
   background-color: #ded7c8;
-  color: #000000;
+  color: #000;
 }
 
+/* ---------------- HEADER ---------------- */
 
 header {
   display: flex;
@@ -31,14 +32,14 @@ header {
 nav a {
   margin: 0 20px;
   text-decoration: none;
-  color: #000000;
+  color: #000;
   font-size: 16px;
+  font-weight: 600;
   transition: all 0.3s ease;
 }
 
 nav a:hover {
   color: orange;
-  font-weight: bold;
   transform: scale(1.05);
 }
 
@@ -57,15 +58,16 @@ nav a:hover {
   transform: translateY(-3px);
 }
 
+/* ---------------- MAIN SECTION ---------------- */
 
 .Main {
   display: flex;
   align-items: center;
   justify-content: space-between;
-  padding: 100px 20px;
-  max-width: 1200px;
+  padding: 120px 40px;
+  max-width: 1300px;
   margin: auto;
-  gap: 50px;
+  gap: 80px;
   flex-wrap: wrap;
 }
 
@@ -74,8 +76,9 @@ nav a:hover {
 }
 
 .Main-text h1 {
-  font-size: 3rem;
-  margin-bottom: 20px;
+  font-size: 3.8rem;
+  font-weight: 800;
+  margin-bottom: 25px;
   color: #e44922;
 }
 
@@ -84,9 +87,10 @@ nav a:hover {
 }
 
 .secondtext {
-  color: #333;
+  font-size: 1.4rem;
+  font-weight: 600;
   margin-bottom: 10px;
-  font-size: 1.2rem;
+  color: #333;
 }
 
 .buttons {
@@ -98,7 +102,7 @@ nav a:hover {
   background-color: rgb(222, 129, 104);
   border: none;
   color: white;
-  padding: 12px 25px;
+  padding: 14px 28px;
   border-radius: 6px;
   cursor: pointer;
   font-size: 1rem;
@@ -115,17 +119,19 @@ nav a:hover {
   transform: translateY(-3px);
 }
 
+/* Pizza görseli sağa yaslandı */
+
 .main-image {
   flex: 1;
   display: flex;
-  justify-content: center;
+  justify-content: flex-end;
 }
 
 .main-image img {
-  width: 100%;
-  max-width: 450px;
+  width: 500px;
+  max-width: 100%;
   border-radius: 15px;
-  box-shadow: 0 10px 20px rgba(0,0,0,0.2);
+  box-shadow: 0 15px 30px rgba(0,0,0,0.25);
   transition: transform 0.3s ease;
 }
 
@@ -133,15 +139,16 @@ nav a:hover {
   transform: scale(1.05);
 }
 
+/* ---------------- ABOUT SECTION ---------------- */
 
 .about-section {
   display: flex;
   align-items: center;
   justify-content: center;
-  padding: 100px 20px;
-  max-width: 1200px;
+  padding: 120px 40px;
+  max-width: 1300px;
   margin: auto;
-  gap: 60px;
+  gap: 80px;
   flex-wrap: wrap;
 }
 
@@ -152,10 +159,10 @@ nav a:hover {
 }
 
 .spagetti-image img {
-  width: 100%;
-  max-width: 450px;
+  width: 450px;
+  max-width: 100%;
   border-radius: 15px;
-  box-shadow: 0 10px 20px rgba(0,0,0,0.2);
+  box-shadow: 0 15px 30px rgba(0,0,0,0.25);
   transition: transform 0.3s ease;
 }
 
@@ -166,17 +173,18 @@ nav a:hover {
 .about-text {
   flex: 1;
   max-width: 600px;
-  font-size: 1.1rem;
-  line-height: 1.8;
 }
 
 .about-text h1 {
-  font-size: 2.5rem;
+  font-size: 3rem;
+  font-weight: 800;
   color: #c1440e;
-  margin-bottom: 25px;
+  margin-bottom: 30px;
 }
 
 .about-text h4 {
+  font-size: 1.2rem;
+  font-weight: 600;
   margin-bottom: 15px;
 }
 
@@ -195,42 +203,52 @@ nav a:hover {
   color: orangered;
 }
 
+/* ---------------- FULL IMAGE SECTION ---------------- */
 
 .full-image {
   width: 100%;
+  height: 100vh;        /* Section'ı tamamen kaplar */
+  object-fit: cover;    /* Taşmadan kırpar */
   display: block;
-  margin-top: 50px;
+  margin-top: 100px;
 }
 
+/* ---------------- FOOTER ---------------- */
 
 footer {
   background-color: #8b0000;
   color: white;
   text-align: center;
   padding: 30px;
-  margin-top: 60px;
+  font-weight: 500;
 }
 
+/* ---------------- RESPONSIVE ---------------- */
 
-@media (max-width: 768px) {
+@media (max-width: 900px) {
 
   header {
-    padding: 15px 20px;
+    padding: 20px;
     flex-direction: column;
     gap: 15px;
   }
 
-  .Main {
-    flex-direction: column;
-    text-align: center;
-  }
-
+  .Main,
   .about-section {
     flex-direction: column;
     text-align: center;
   }
 
-  nav a {
-    margin: 0 10px;
+  .main-image {
+    justify-content: center;
+    margin-top: 40px;
+  }
+
+  .Main-text h1 {
+    font-size: 2.8rem;
+  }
+
+  .about-text h1 {
+    font-size: 2.3rem;
   }
 }
