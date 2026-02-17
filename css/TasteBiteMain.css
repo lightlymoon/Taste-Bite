@@ -13,7 +13,6 @@ body {
   color: #000;
 }
 
-/* ---------------- HEADER ---------------- */
 
 header {
   display: flex;
@@ -60,11 +59,10 @@ nav a:hover {
   transform: translateY(-3px);
 }
 
-/* ---------------- MAIN SECTION ---------------- */
 
 .Main {
   display: flex;
-  align-items: center;          /* Yazı ve görsel aynı hizada */
+  align-items: center;         
   justify-content: space-between;
   max-width: 1300px;
   margin: auto;
@@ -72,15 +70,15 @@ nav a:hover {
   gap: 60px;
 }
 
-/* Yazı alanı */
+
 
 .Main-text {
   flex: 1;
 }
 
 .Main-text h1 {
-  font-size: 4rem;      /* büyütüldü */
-  font-weight: 900;     /* kalınlaştırıldı */
+  font-size: 4rem;     
+  font-weight: 900;    
   margin-bottom: 25px;
   color: #e44922;
 }
@@ -90,13 +88,12 @@ nav a:hover {
 }
 
 .secondtext {
-  font-size: 1.5rem;    /* büyütüldü */
+  font-size: 1.5rem;   
   font-weight: 600;
   margin-bottom: 12px;
   color: #333;
 }
 
-/* Butonlar */
 
 .buttons {
   margin-top: 30px;
@@ -124,12 +121,10 @@ nav a:hover {
   transform: translateY(-3px);
 }
 
-/* 🍕 PIZZA GÖRSELİ — Welcome yazısının SAĞINDA */
 
 .main-image {
   flex: 1;
-  display: flex;
-  justify-content: flex-end;   /* SAĞA YASLAR */
+  justify-content: flex-end; 
   align-items: center;
 }
 
@@ -145,7 +140,6 @@ nav a:hover {
   transform: scale(1.05);
 }
 
-/* ---------------- ABOUT SECTION ---------------- */
 
 .about-section {
   display: flex;
@@ -189,17 +183,14 @@ nav a:hover {
   margin-bottom: 15px;
 }
 
-/* ---------------- FULL IMAGE ---------------- */
 
 .full-image {
   width: 100%;
-  height: 100vh;       /* tüm section'ı kaplar */
   object-fit: cover;
   display: block;
   margin-top: 100px;
 }
 
-/* ---------------- FOOTER ---------------- */
 
 footer {
   background-color: #8b0000;
@@ -209,7 +200,6 @@ footer {
   font-weight: 500;
 }
 
-/* ---------------- RESPONSIVE ---------------- */
 
 @media (max-width: 900px) {
 
@@ -233,4 +223,5 @@ footer {
     font-size: 2.8rem;
   }
 }
+
 
