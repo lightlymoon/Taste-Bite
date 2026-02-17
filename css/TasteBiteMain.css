@@ -62,22 +62,23 @@ nav a:hover {
 
 .Main {
   display: flex;
-  align-items: center;
+  align-items: center;          /* Yazı ve görsel aynı hizada */
   justify-content: space-between;
-  padding: 120px 40px;
   max-width: 1300px;
   margin: auto;
-  gap: 80px;
-  flex-wrap: wrap;
+  padding: 120px 60px;
+  gap: 60px;
 }
+
+/* Yazı alanı */
 
 .Main-text {
   flex: 1;
 }
 
 .Main-text h1 {
-  font-size: 3.8rem;
-  font-weight: 800;
+  font-size: 4rem;      /* büyütüldü */
+  font-weight: 900;     /* kalınlaştırıldı */
   margin-bottom: 25px;
   color: #e44922;
 }
@@ -87,11 +88,13 @@ nav a:hover {
 }
 
 .secondtext {
-  font-size: 1.4rem;
+  font-size: 1.5rem;    /* büyütüldü */
   font-weight: 600;
-  margin-bottom: 10px;
+  margin-bottom: 12px;
   color: #333;
 }
+
+/* Butonlar */
 
 .buttons {
   margin-top: 30px;
@@ -119,19 +122,20 @@ nav a:hover {
   transform: translateY(-3px);
 }
 
-/* Pizza görseli sağa yaslandı */
+/* 🍕 PIZZA GÖRSELİ — Welcome yazısının SAĞINDA */
 
 .main-image {
   flex: 1;
   display: flex;
-  justify-content: flex-end;
+  justify-content: flex-end;   /* SAĞA YASLAR */
+  align-items: center;
 }
 
 .main-image img {
-  width: 500px;
+  width: 520px;
   max-width: 100%;
   border-radius: 15px;
-  box-shadow: 0 15px 30px rgba(0,0,0,0.25);
+  box-shadow: 0 20px 40px rgba(0,0,0,0.25);
   transition: transform 0.3s ease;
 }
 
@@ -145,7 +149,7 @@ nav a:hover {
   display: flex;
   align-items: center;
   justify-content: center;
-  padding: 120px 40px;
+  padding: 120px 60px;
   max-width: 1300px;
   margin: auto;
   gap: 80px;
@@ -163,11 +167,6 @@ nav a:hover {
   max-width: 100%;
   border-radius: 15px;
   box-shadow: 0 15px 30px rgba(0,0,0,0.25);
-  transition: transform 0.3s ease;
-}
-
-.spagetti-image img:hover {
-  transform: scale(1.05);
 }
 
 .about-text {
@@ -188,27 +187,12 @@ nav a:hover {
   margin-bottom: 15px;
 }
 
-.about-text h3 {
-  margin-top: 30px;
-}
-
-.about-text a {
-  text-decoration: none;
-  color: #b54242;
-  font-weight: bold;
-  transition: color 0.3s ease;
-}
-
-.about-text a:hover {
-  color: orangered;
-}
-
-/* ---------------- FULL IMAGE SECTION ---------------- */
+/* ---------------- FULL IMAGE ---------------- */
 
 .full-image {
   width: 100%;
-  height: 100vh;        /* Section'ı tamamen kaplar */
-  object-fit: cover;    /* Taşmadan kırpar */
+  height: 100vh;       /* tüm section'ı kaplar */
+  object-fit: cover;
   display: block;
   margin-top: 100px;
 }
@@ -228,13 +212,12 @@ footer {
 @media (max-width: 900px) {
 
   header {
-    padding: 20px;
     flex-direction: column;
     gap: 15px;
+    padding: 20px;
   }
 
-  .Main,
-  .about-section {
+  .Main {
     flex-direction: column;
     text-align: center;
   }
@@ -246,9 +229,5 @@ footer {
 
   .Main-text h1 {
     font-size: 2.8rem;
-  }
-
-  .about-text h1 {
-    font-size: 2.3rem;
   }
 }
